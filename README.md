@@ -1,8 +1,12 @@
-IoT Radar System (ESP32-Based) 🛰️
-Proyek UAS - Sistem Mikrokontroler
-Nama: Sheila Nur Hamidah
-NIM: 23552011398
-Kelas: TIF RP 23 CNS A
+# IoT Radar System (ESP32-Based) 🛰️
+
+**Informasi Mahasiswa:**
+* **Proyek:** UAS - Sistem Mikrokontroler
+* **Nama:** Sheila Nur Hamidah
+* **NIM:** 23552011398
+* **Kelas:** TIF RP 23 CNS A
+
+---
 
 📌 Deskripsi Proyek
 Proyek IoT Radar System ini dirancang sebagai solusi pemindaian area berbasis Single-Board System memanfaatkan ESP32 sebagai unit pemrosesan tunggal. Radar ini bekerja dengan menggerakkan sensor ultrasonik menggunakan motor servo untuk memindai objek di sekitar dalam radius 0° hingga 180°.

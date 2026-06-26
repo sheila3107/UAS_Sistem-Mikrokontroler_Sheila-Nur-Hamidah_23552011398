@@ -282,12 +282,7 @@ Menyimpan riwayat hasil scanning.
 
 > **Tampilan History**
 
-<img width="636" height="296" alt="image" src="https://github.com/user-attachments/assets/f52f59a5-d38b-42b7-9c0f-71165add5ca4" />
-
-
-```
-
----
+<img src="https://github.com/user-attachments/assets/f52f59a5-d38b-42b7-9c0f-71165add5ca4" alt="History">
 
 ## ⚙ Pengaturan
 

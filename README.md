@@ -262,7 +262,6 @@ Halaman utama monitoring radar.
 
 > **Dashboard**
 
-```
 <img width="1280" height="598" alt="image" src="https://github.com/user-attachments/assets/328e23dd-ef3f-4546-aa6a-192506b4d27f" />
 
 ```
@@ -282,8 +281,6 @@ Menyimpan riwayat hasil scanning.
 - Export CSV
 
 > **Tampilan History**
-
-```
 <img width="1280" height="595" alt="image" src="https://github.com/user-attachments/assets/96972ed6-a0ac-4f43-b268-95844cfc3120" />
 
 ```
@@ -316,7 +313,6 @@ Halaman konfigurasi sistem.
 
 > **Tampilan Pengaturan**
 
-```
 <img width="640" height="299" alt="image" src="https://github.com/user-attachments/assets/fa6936ec-a196-49a2-bdcd-a37dd577341d" />
 
 ```
@@ -355,7 +351,6 @@ GET /stop
 
 > **Tampilan Tentang**
 
-```
 <img width="1280" height="596" alt="image" src="https://github.com/user-attachments/assets/c02f0138-e968-4d99-aacb-63214453edfb" />
 
 ```

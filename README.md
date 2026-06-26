@@ -308,9 +308,6 @@ Halaman konfigurasi sistem.
 
 <img width="640" height="299" alt="image" src="https://github.com/user-attachments/assets/fa6936ec-a196-49a2-bdcd-a37dd577341d" />
 
-```
-
----
 
 ## ℹ Tentang
 
@@ -346,9 +343,6 @@ GET /stop
 
 <img width="1280" height="596" alt="image" src="https://github.com/user-attachments/assets/c02f0138-e968-4d99-aacb-63214453edfb" />
 
-```
-
----
 
 # 📂 Struktur Project
 

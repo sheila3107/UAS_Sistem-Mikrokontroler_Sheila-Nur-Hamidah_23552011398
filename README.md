@@ -281,7 +281,9 @@ Menyimpan riwayat hasil scanning.
 - Export CSV
 
 > **Tampilan History**
-<img width="1280" height="595" alt="image" src="https://github.com/user-attachments/assets/96972ed6-a0ac-4f43-b268-95844cfc3120" />
+
+<img width="636" height="296" alt="image" src="https://github.com/user-attachments/assets/f52f59a5-d38b-42b7-9c0f-71165add5ca4" />
+
 
 ```
 

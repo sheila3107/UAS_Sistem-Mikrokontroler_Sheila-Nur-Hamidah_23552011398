@@ -264,10 +264,6 @@ Halaman utama monitoring radar.
 
 <img width="1280" height="598" alt="image" src="https://github.com/user-attachments/assets/328e23dd-ef3f-4546-aa6a-192506b4d27f" />
 
-```
-
----
-
 ## 📜 Detection History
 
 Menyimpan riwayat hasil scanning.

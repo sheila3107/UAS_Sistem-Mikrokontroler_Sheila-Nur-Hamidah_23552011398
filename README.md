@@ -397,6 +397,6 @@ Dashboard web memberikan kemudahan dalam memonitor hasil pemindaian, melihat riw
 
 NIM : **23552011398**
 
-Universitas Jenderal Achmad Yani (UNJANI)
+Universitas Teknologi Bandung
 
 Program Studi Teknik Informatika

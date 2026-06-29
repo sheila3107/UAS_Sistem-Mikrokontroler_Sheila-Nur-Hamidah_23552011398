@@ -35,19 +35,6 @@ Seluruh data dikirim dalam format **JSON API** sehingga dapat divisualisasikan p
 
 # ✨ Fitur Utama
 
-## 🚀 FreeRTOS Multi-Tasking
-
-Memanfaatkan sistem operasi **FreeRTOS** bawaan ESP32 sehingga beberapa proses dapat berjalan secara bersamaan (parallel).
-
-Task yang dijalankan meliputi:
-
-- Radar Scanning
-- Web Server
-- Monitoring Data
-- HTTP Request Handling
-
----
-
 ## 📡 Radar Scanning 180°
 
 Servo bergerak otomatis dari:
@@ -86,96 +73,6 @@ Sistem memberikan indikator berdasarkan jarak objek.
 | 🟡 Waspada | 16–30 cm | LED Kuning |
 | 🔴 Bahaya | ≤15 cm | LED Merah + Buzzer |
 
----
-
-# ⚙️ Implementasi FreeRTOS
-
-ESP32 memiliki **Dual-Core Processor** sehingga mampu menjalankan beberapa task secara bersamaan.
-
-Pada proyek ini FreeRTOS digunakan untuk memisahkan proses radar dengan web server sehingga keduanya dapat berjalan tanpa saling mengganggu.
-
----
-
-## 1. Import Library FreeRTOS
-
-```cpp
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-```
-
-Library tersebut digunakan untuk mengaktifkan fitur:
-
-- Task
-- Scheduler
-- Delay
-- Multi-Core Processing
-
----
-
-## 2. Mengosongkan Fungsi loop()
-
-```cpp
-void loop()
-{
-    vTaskDelay(portMAX_DELAY);
-}
-```
-
-Seluruh proses dijalankan oleh FreeRTOS sehingga fungsi `loop()` Arduino tidak lagi digunakan.
-
----
-
-## 3. Membuat Task
-
-```cpp
-xTaskCreatePinnedToCore(
-    TaskRadar,
-    "Task Radar",
-    4096,
-    NULL,
-    1,
-    NULL,
-    1
-);
-
-xTaskCreatePinnedToCore(
-    TaskWebServer,
-    "Task Web",
-    4096,
-    NULL,
-    1,
-    NULL,
-    0
-);
-```
-
-Pembagian Core:
-
-| Core | Task |
-|-------|------|
-| Core 0 | Web Server |
-| Core 1 | Radar Scanning |
-
-Dengan pembagian tersebut proses scanning radar tidak akan terganggu ketika web sedang menerima request.
-
----
-
-## 4. Non-Blocking Delay
-
-```cpp
-void TaskWebServer(void *pvParameters)
-{
-    while (true)
-    {
-        server.handleClient();
-        vTaskDelay(pdMS_TO_TICKS(5));
-    }
-}
-```
-
-`vTaskDelay()` memberikan kesempatan scheduler menjalankan task lain sehingga sistem menjadi lebih efisien dibanding penggunaan `delay()` biasa.
-
----
 
 # 🛠 Hardware
 

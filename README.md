@@ -137,6 +137,8 @@ Program membagi hasil deteksi menjadi tiga kategori.
 
 # 🌐 Web Dashboard
 
+BERIKUT LINK DEMO PROJECT UAS https://drive.google.com/drive/folders/1sxsOysFqAS7HrG7p0qs2c3aW4hAb_Ea-?usp=sharing
+
 Dashboard digunakan untuk memonitor hasil scanning secara real-time.
 
 ---
